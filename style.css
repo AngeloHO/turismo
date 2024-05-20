@@ -50,6 +50,13 @@ header ul li a {
     margin: 0 40px;
 }
 
+header .carrinho {
+    margin-right: 10px;
+    margin-left: auto;
+
+
+}
+
 .fundo {
     background-image: url(imagens/banner.jpg);
     background-position: center;
@@ -318,6 +325,16 @@ h2 span {
     background: #FE775A;
 }
 
+.preco {
+    color: #ffAE81;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.btn-carrinho {
+    background-color: #ffAE81;
+    color: #f0f0f0;
+}
 
 .footer {
     font-size: 14px;
