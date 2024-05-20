@@ -1,7 +1,3 @@
-html {
-    height: 500vh;
-}
-
 .container {
     max-width: 1280px;
     margin: auto;
@@ -61,7 +57,7 @@ header ul li a {
     background-size: cover;
     height: 100vh;
     padding-top: 80px;
-   
+
 }
 
 .fundo h1 {
@@ -98,8 +94,8 @@ header ul li a {
 
 .main-content {
     padding-top: 100px;
-    
-    
+
+
 }
 
 .card {
@@ -120,4 +116,292 @@ header ul li a {
     cursor: pointer;
     transition: .2s;
     border-radius: 4px;
+}
+
+
+.carousel-container {
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: 150px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+
+}
+
+.carousel-inner {
+    transition: transform 3s ease;
+
+}
+
+.carousel-item {
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+
+}
+
+.carousel-item-next.carousel-item-start,
+.carousel-item-prev.carousel-item-start,
+.carousel-item.active.carousel-item-start,
+.carousel-item-next.carousel-item-end,
+.carousel-item-prev.carousel-item-end,
+.carousel-item.active.carousel-item-end {
+    transform: translateX(0);
+
+}
+
+h2 {
+    text-align: center;
+    /* Centraliza o texto */
+    text-transform: uppercase;
+    /* Converte o texto para maiúsculas */
+    letter-spacing: 1px;
+    /* Adiciona um espaçamento entre as letras */
+    margin-bottom: 20px;
+    /* Adiciona espaço abaixo do elemento */
+}
+
+h2 span {
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
+}
+
+.section-header {
+    margin-top: 50px;
+}
+
+.contact .info-item {
+    background: #f4f4f4;
+    padding: 30px;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.contact .info-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: #fff;
+    background: #FE775A;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact .info-item h3 {
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.contact .info-item p {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.contact .info-item .social-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: rgba(55, 55, 63, 0.7);
+    line-height: 1;
+    margin: 4px 6px 0 0;
+    transition: 0.3s;
+}
+
+.contact .info-item .social-links a:hover {
+    color: #FE775A;
+}
+
+.contact .php-email-form {
+    width: 100%;
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 20px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #FE775A;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #059652;
+    border-top-color: #fff;
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.contact .php-email-form input {
+    height: 48px;
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #FE775A;
+    border: 0;
+    padding: 12px 40px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #FE775A;
+}
+
+
+.footer {
+    font-size: 14px;
+    background-color: #c4563e;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.footer .footer-links {
+    margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+    color: #fff;
+}
+
+.footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .credits {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer .credits a {
+    color: #fff;
 }
