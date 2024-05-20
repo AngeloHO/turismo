@@ -332,8 +332,12 @@ h2 span {
 }
 
 .btn-carrinho {
-    background-color: #ffAE81;
-    color: #f0f0f0;
+    border: 0;
+    background-color: #FE775A;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 4px;
 }
 
 .footer {
@@ -422,3 +426,4 @@ h2 span {
 .footer .credits a {
     color: #fff;
 }
+
