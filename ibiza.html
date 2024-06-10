@@ -27,7 +27,8 @@
                     </ul>
                 </nav>
                 <div class="carrinho">
-                    <a href=""><i class="bi bi-cart"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#carrinhoModal"><i class="bi bi-cart"></i><span
+                            id="carrinhoBadge" class="badge bg-danger rounded-pill" style="display: none;">0</span></a>
                 </div>
                 <div class="btn">
                     <a href=""><button class="btn-contato">Contato</button></a>
@@ -35,6 +36,7 @@
             </div>
         </div>
     </header>
+
 
     <section id="about" class="about main-content">
         <div class="container">
@@ -50,31 +52,56 @@
                 </div>
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="content">
-                        <p class="fst-italic">
-                            Descubra a vibrante Ibiza e explore sua rica história e cultura. De praias paradisíacas a
+
+                        <div class="section h-100 mt-3">
+                            <p class="fst-italic">
+                            <h5 class="card-title">Ibiza</h5>
+                            Descubra a vibrante Ibiza e explore sua rica história e cultura. De praias paradisíacas
+                            a
                             vida noturna animada, a ilha oferece uma experiência única para todos os visitantes.
-                        </p>
-                        <p>
-                            Aproveite as festas renomadas, explore as belas enseadas e praias de areia branca, e
-                            saboreie
-                            a deliciosa culinária mediterrânea. Ibiza é o destino perfeito para quem busca diversão e
-                            relaxamento.
-                        </p>
-                        <p>
-                            A partir de <span class="preco">R$ 7.000,00</span>
-                        </p>
-                        <div class="d-flex justify-content-between">
-                            <button class="btn-carrinho">Adicionar ao carrinho</button>
-                            <button class="btn btn-success">Comprar</button>
+                            </p>
+                            <p>
+                                Aproveite as festas renomadas, explore as belas enseadas e praias de areia branca, e
+                                saboreie
+                                a deliciosa culinária mediterrânea. Ibiza é o destino perfeito para quem busca diversão
+                                e
+                                relaxamento.
+                            </p>
+                            <p>
+                                A partir de <span class="preco">R$ 7.000,00</span>
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-carrinho  add-to-cart">Adicionar ao carrinho</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+        </div>
         </div>
     </section>
-
-
-
+    <!-- Carrinho Modal -->
+    <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="carrinhoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="carrinhoModalLabel">Carrinho de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="carrinhoItens" class="list-group">
+                        <!-- Os itens do carrinho aparecerão aqui -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="destinos" class="destinos py-5">
         <div class="container">
@@ -223,6 +250,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>

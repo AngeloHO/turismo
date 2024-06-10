@@ -427,3 +427,15 @@ h2 span {
     color: #fff;
 }
 
+/* Estilo para o carrinho */
+.carrinho {
+    position: relative;
+}
+
+.carrinho .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+}
