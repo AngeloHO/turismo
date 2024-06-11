@@ -37,6 +37,7 @@
         </div>
     </header>
 
+
     <section id="about" class="about main-content">
         <div class="container">
             <div class="section-header">
@@ -45,37 +46,64 @@
 
             <div class="row gy-4">
                 <div class="col-lg-6">
-                    <div class="roma-img">
-                        <img src="imagens/roma2.jpg" class="img-fluid custom-img" alt="Roma">
+                    <div class="card-img-top">
+                        <img src="imagens/roma2.jpg" class="img-fluid custom-img" alt="roma">
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="section h-100 mt-3">
-                        <h5 class="card-title">Roma</h5>
-                        <p class="fst-italic">
-                            Descubra a magnífica Roma e explore sua rica história e cultura. De antigas ruínas a belas
-                            praças,
-                            a cidade oferece uma experiência única para todos os visitantes.
-                        </p>
-                        <p>
-                            Explore o Coliseu, o Fórum Romano e o Pantheon, maravilhando-se com a grandiosidade da
-                            arquitetura
-                            antiga. Desfrute de um passeio pelas encantadoras ruas de paralelepípedos e saboreie a
-                            deliciosa
-                            culinária italiana.
-                        </p>
-                        <p>
-                            A partir de <span class="preco">R$ 6.300,00</span>
-                        </p>
-                        <div class="d-flex justify-content-between">
-                            <button class="btn btn-carrinho  add-to-cart">Adicionar ao carrinho</button>
+                    <div class="content">
+
+                        <div class="section h-100 mt-3">
+                            <h5 class="card-title">Roma</h5>
+                            <p class="fst-italic">
+                                Descubra a magnífica Roma e explore sua rica história e cultura. De antigas ruínas a
+                                belas
+                                praças,
+                                a cidade oferece uma experiência única para todos os visitantes.
+                            </p>
+                            <p>
+                                Explore o Coliseu, o Fórum Romano e o Pantheon, maravilhando-se com a grandiosidade da
+                                arquitetura
+                                antiga. Desfrute de um passeio pelas encantadoras ruas de paralelepípedos e saboreie a
+                                deliciosa
+                                culinária italiana.
+                            </p>
+                            <p>
+                                A partir de <span class="preco">R$ 12.000,00</span>
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-carrinho  add-to-cart">Adicionar ao carrinho</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+        </div>
         </div>
     </section>
+    <!-- Carrinho Modal -->
+    <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="carrinhoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="carrinhoModalLabel">Carrinho de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="carrinhoItens" class="list-group">
+                        <!-- Os itens do carrinho aparecerão aqui -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   <button type="button" class="btn btn-success" onclick="window.location.href = 'compra.html';">Finalizar Compra</button>
 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="destinos" class="destinos py-5">
         <div class="container">
@@ -151,26 +179,6 @@
             </div>
         </div>
     </section>
-    <!-- Carrinho Modal -->
-    <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="carrinhoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="carrinhoModalLabel">Carrinho de Compras</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul id="carrinhoItens" class="list-group">
-                        <!-- Os itens do carrinho aparecerão aqui -->
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-success">Finalizar Compra</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <footer id="footer" class="footer">
 
         <div class="container">
@@ -227,11 +235,7 @@
                 &copy; Copyright <strong><span>Agencia de turismo</span></strong>. Todos os direitos reservados
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a>Angelo Oneda</a>
             </div>
         </div>
 
@@ -244,6 +248,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
