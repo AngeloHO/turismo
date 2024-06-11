@@ -62,6 +62,14 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem('carrinho', JSON.stringify(carrinho));
     }
 
+    function calcularTotal() {
+        let total = 0;
+        carrinho.forEach(item => {
+            total += parseFloat(item.preco);
+        });
+        return total.toFixed(2);
+    }
+
     // Inicializa o carrinho a partir do localStorage
     let carrinho = carregarCarrinho();
 
@@ -86,6 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         badge.textContent = carrinho.length;
         badge.style.display = carrinho.length > 0 ? 'inline-block' : 'none';
+
+        const totalSpan = document.querySelector('.h4:last-child');
+        totalSpan.textContent = `$ ${calcularTotal()}`;
 
         // Salva o estado atual do carrinho no localStorage
         salvarCarrinho(carrinho);
@@ -122,3 +133,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Carregar o carrinho ao iniciar a página
     atualizarCarrinho();
 });
+
+function compraRealizada() {
+    // Verifica se o elemento com ID 'comprar' existe na página
+    var comprarButton = document.getElementById("comprar");
+
+    // Exibe um alerta de confirmação da compra
+    alert("Compra realizada com sucesso!");
+
+    // Redireciona o usuário para a página index.html
+    window.location.href = "index.html";
+}
