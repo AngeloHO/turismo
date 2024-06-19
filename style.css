@@ -462,5 +462,54 @@ h2 span {
 }
 
 .btn-padrao:hover {
-    background-color: #FE775A; /* Manter a mesma cor de fundo ao passar o mouse */
+    background-color: #FE775A;
+    /* Manter a mesma cor de fundo ao passar o mouse */
+}
+
+
+
+.header2 {
+    width: 100%;
+    height: 80px;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1000;
+    background-color: #FE775A;
+}
+
+.header2.rolagem {
+    background-color: grey;
+    padding: 3px 2%;
+}
+
+.header2 i {
+    font-size: 30px;
+    color: white;
+}
+
+.header2 ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header2 ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.header2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 40px;
+}
+
+.header2 .carrinho {
+    margin-right: 10px;
+    margin-left: auto;
 }
