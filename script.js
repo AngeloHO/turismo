@@ -175,3 +175,19 @@ let countdownDisplay = document.querySelector('.countdown');
 
 // Inicia o contador
 startCountdown(countdownDuration, countdownDisplay);
+
+// passageiros incluir e retirar 
+function incrementar() {
+    var input = document.getElementById('quantidade');
+    var valor = parseInt(input.value);
+    input.value = valor + 1;
+}
+
+function decrementar() {
+    var input = document.getElementById('quantidade');
+    var valor = parseInt(input.value);
+    if (valor > 1) {
+        input.value = valor - 1;
+    }
+}
+

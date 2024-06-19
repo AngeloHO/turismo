@@ -440,10 +440,6 @@ h2 span {
     color: white;
 }
 
-
-
-
-
 .countdown {
     font-size: 30px;
     font-family: monospace;
@@ -454,4 +450,17 @@ h2 span {
     text-align: center;
     display: inline-block;
 
+}
+
+.btn-padrao {
+    border: 0;
+    background-color: #FE775A;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 4px;
+}
+
+.btn-padrao:hover {
+    background-color: #FE775A; /* Manter a mesma cor de fundo ao passar o mouse */
 }

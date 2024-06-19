@@ -63,6 +63,41 @@
                             Empire State Building e da Ponte do Brooklyn, e delicie-se com a culinária internacional
                             disponível em todos os cantos da cidade.
                         </p>
+                        <div class="dropdown" id="dropdownPassageiros">
+                            <button class="btn btn-padrao dropdown-toggle" type="button" id="dropdownPassageirosBtn"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Passageiros
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownPassageirosBtn"
+                                onclick="event.stopPropagation();">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <button class="btn btn-padrao" type="button" onclick="decrementar()">
+                                                    <i class="bi bi-dash-circle"></i>
+                                                </button>
+                                                <input id="quantidade" type="text" class="form-control text-center"
+                                                    value="1" readonly>
+                                                <button class="btn btn-padrao" type="button" onclick="incrementar()">
+                                                    <i class="bi bi-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="dataIda" class="form-label">Data de ida</label>
+                                <input type="date" id="dataIda" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dataVolta" class="form-label">Data de volta</label>
+                                <input type="date" id="dataVolta" class="form-control">
+                            </div>
+                        </div>
                         <p>
                             A partir de <span class="preco">R$ 8.500,00</span>
                         </p>
@@ -89,7 +124,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                   <button type="button" class="btn btn-success" onclick="window.location.href = 'compra.html';">Finalizar Compra</button>
+                    <button type="button" class="btn btn-success"
+                        onclick="window.location.href = 'compra.html';">Finalizar Compra</button>
 
                 </div>
             </div>
