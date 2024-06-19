@@ -140,9 +140,9 @@
                                         nossos
                                         canais. E pronto!</p>
 
-                                    <button class="btn btn-carrinho w-100 mt-3">Finalizar o pedido com PIX</button>
+                                    <button class="btn btn-carrinho w-100 mt-3" data-bs-toggle="modal"
+                                        data-bs-target="#modalPix">Finalizar o pedido com PIX</button>
                                 </div>
-
                             </div>
 
                             <hr>
@@ -185,6 +185,26 @@
             </div>
         </div>
     </section>
+    <!-- Pix Modal -->
+    <div class="modal fade" id="modalPix" tabindex="-1" aria-labelledby="modalPixLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPixLabel">Carrinho de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <img src="qrcode-pix.png" alt="QR Code">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success"
+                        onclick="window.location.href = 'compra.html';">Finalizar
+                        Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer" class="bg-dark text-light py-5">
         <div class="container">
