@@ -49,4 +49,4 @@ Contribuidores
 Este projeto foi desenvolvido por:
 
     Angelo Henrique Oneda
-    Aristides
+    Aristides Evangelista Neto
