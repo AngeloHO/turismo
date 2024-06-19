@@ -144,3 +144,34 @@ function compraRealizada() {
     // Redireciona o usuário para a página index.html
     window.location.href = "index.html";
 }
+
+
+// Função para iniciar o contador regressivo
+function startCountdown(duration, display) {
+    let timer = duration;
+    let interval = setInterval(function () {
+        let minutes = Math.floor(timer / 60);
+        let seconds = timer % 60;
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.querySelector('#minutes').textContent = minutes;
+        display.querySelector('#seconds').textContent = seconds;
+
+        if (--timer < 0) {
+            clearInterval(interval); // Para o intervalo quando o contador chegar a zero
+            alert("O QR Code expirou. Por favor, gere um novo clicando em Finalizar a compra com PIX.");
+            location.reload(); // Recarrega a página após o usuário clicar em OK no alerta
+        }
+    }, 1000);
+}
+
+// Tempo inicial em segundos (2 minutos)
+let countdownDuration = 2 * 60;
+
+// Seleciona o elemento onde o contador será exibido
+let countdownDisplay = document.querySelector('.countdown');
+
+// Inicia o contador
+startCountdown(countdownDuration, countdownDisplay);

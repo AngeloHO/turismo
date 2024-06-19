@@ -439,3 +439,19 @@ h2 span {
     background-color: red;
     color: white;
 }
+
+
+
+
+
+.countdown {
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #c4563e;
+    line-height: 2em;
+    height: 2em;
+    text-align: center;
+    display: inline-block;
+
+}
